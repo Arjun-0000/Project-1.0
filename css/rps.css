@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #262626;
+}
+.clear{
+	clear: both;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	position: absolute;
+}
+.mark-box{
+	min-height: 20%;
+	width: 150px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 50px;
+}
+.mark-box h3{
+	text-decoration: underline solid red;
+	color: yellow;
+}
+.mark-box p{
+	text-decoration: underline solid green;
+	font-size: 40px;
+}
+.left-box{
+	float: left;
+}
+.right-box{
+	float: right;
+}
+h2{
+	text-align: center;
+	color: #ffffff;
+	margin-top: 20px;
+}
+.rps{
+	height: 40%;
+	width: 50%;
+	margin: auto;
+}
+.rps h2{
+	margin-top: 30%;
+}
+.player-rps{
+	float: left;
+}
+#player-rps{
+	min-height: 100%;
+	background-image: url('../img/rpg-rock.png');
+	background-size: contain;
+	background-position: center;
+	 transform: scaleX(-1);
+}
+.computer-rps{
+	float: right;
+}
+#computer-rps{
+	min-height: 100%;
+	background-image: url('../img/rpg-rock.png');
+	background-size: contain;
+	background-position: center;
+}
+.player-rps,.computer-rps{
+	height: 100%;
+	width: 30%;
+}
+
+.button{
+	padding: 10px 28%;
+}
+.btn{
+	font-size: 25px;
+	margin: auto;
+}
+#result{
+	color: white;
+	font-size: 45px;
+}
+@media(max-width: 720px){
+	.container{max-height: 100%; max-width: 100%;}
+	.mark-box{width: 40%; margin-top: 15px;}
+	.mark-box p{ font-size: 50px; }
+	.rps{height: 40%; width: 100%;}
+	.player-rps,.computer-rps{width: 47%;}
+	
+}
